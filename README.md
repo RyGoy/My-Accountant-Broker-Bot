@@ -1,5 +1,5 @@
 # My-Accountant-Broker-Bot
-Set up a learning robot with a "paper" stock trading account that makes decisons based on API data.
+Set up a learning robot with a "paper" stock trading account that makes decisions based on API data.
 
 # Goals
 
@@ -14,9 +14,9 @@ Set up a learning robot with a "paper" stock trading account that makes decisons
 DISCLAIMER:
 **_This is for educational purposes ONLY, we have set this up with a "paper wallet" ACCOUNT. Don't be fucking retarded._**
 
-We wanted to to focus on the easiest way to make money while pursuing computer sicence. IF computer science is the answer to everything THEN the problem of emotional trading can be solved with computer science, we just need to set the rules, but It looks like [Github has some rules set up allready.](https://github.com/roguesupport-scott/Machine-Learning-Stock-Trading-Bot)
+We wanted to focus on the easiest way to make money while pursuing computer science. IF computer science is the answer to everything THEN the problem of emotional trading can be solved with computer science, we just need to set the rules, but It looks like [Github has some rules set up already.](https://github.com/roguesupport-scott/Machine-Learning-Stock-Trading-Bot)
 
-I don't actually know Python, I just know how to find the parts I need and to put them together, I have learned a lot about **file** structures and how to edit indivdual **files**. Learning computer science has been the fastest feedback mechanism i've ever encoutered in my life. All the heavy lifting has been done, the sandbox is already built!
+I don't actually know Python, I just know how to find the parts I need and to put them together, I have learned a lot about **file** structures and how to edit individual **files**. Learning computer science has been the fastest feedback mechanism I've ever encountered in my life. All the heavy lifting has been done, the sandbox is already built!
 
 We will set this `robot agent` up on a Raspberry Pi 4, we'll need at least 16 gb flash memory and the ability to hook the Pi4 up to a screen and keyboard.
 
@@ -24,7 +24,7 @@ We will set this `robot agent` up on a Raspberry Pi 4, we'll need at least 16 gb
 #### Setting Up The Pi
 ---
 First we will install the [Raspberry Pi Imager](https://github.com/raspberrypi/rpi-imager)
-and then we will install an operating system onto the PI. You can also visit the [offcial site](https://www.raspberrypi.com/software/).
+and then we will install an operating system onto the PI. You can also visit the [official site](https://www.raspberrypi.com/software/).
 
 
 ![Pasted image 20221006145533](https://user-images.githubusercontent.com/94795740/194461935-4b61aeb5-92da-4ce6-9ab9-b6832fa97aa5.png)
@@ -67,11 +67,11 @@ If you're looking for the IP through a keyboard connection to the actual Pi, the
 
 >$ ifconfig
 
-Ubuntu will tell you how to install this as it should not be installed yet. It's best practices to update Linux before adding new programs.
+Ubuntu will tell you how to install this as it should not be installed yet. It's best practice to update Linux before adding new programs.
 
 >$ sudo apt-get update && sudo apt-get upgrade -y
 
-After installing net-tools you should be able to use `ifconfig` and you should see the connection you've establised to the network, I found this example below.
+After installing net-tools you should be able to use `ifconfig` and you should see the connection you've established to the network, I found this example below.
 
 
 ![Pasted image 20221006161704](https://user-images.githubusercontent.com/94795740/194462313-ef5138b5-afcf-4ca9-92ac-08e425383f2d.png)
@@ -81,7 +81,7 @@ Now we can go to our terminal on our regular workstation computer and SSH into t
 
 >ssh pi@192.168.0.15
 
-This will allow us to copy/paste everything else directy to the device with out SSH connection. You could try doing everything from the Pi directly but I don't reccomend it.
+This will allow us to copy/paste everything else directly to the device without an SSH connection. You could try doing everything from the Pi directly but I don't recommend it.
 
 ---
 #### Installing The Bot
@@ -89,7 +89,7 @@ This will allow us to copy/paste everything else directy to the device with out 
 
 Now we should have command line access to the Pi from our workstation.
 
-First make sure the following are install in linux.
+First make sure the following are installed in linux.
 
 >$ sudo apt install python3-pip -y
 
@@ -101,7 +101,7 @@ At this point you should get a warning that says the "location" is not on [PATH]
 
 >$ export PATH=/home/pi/.local/bin:$PATH
 
-"pi" should be your username, but it will be evident in the warning what you had set up earlier. Next we will install [News API](https://newsapi.org/docs/client-libraries/python).
+"pi" should be your username, but it will be evident in the warning, what you had set up earlier. Next we will install [News API](https://newsapi.org/docs/client-libraries/python).
 
 >$ pip install newsapi-python
 
@@ -113,13 +113,13 @@ Then we install [Scikit-learn](https://scikit-learn.org/stable/)
 
 >$ pip install scikit-learn
 
-Then we need to make a blank text file with nano for the program to refrence and/or **print** to.
+Then we need to make a blank text file with nano for the program to reference and/or **print** to.
 
 >$ sudo nano target_price_list.txt
 
 **Note**: I use a blank space as the only character in blank documents so that the document actually saves.
 
-We will uses nano, and paste the [following code](https://github.com/roguesupport-scott/Machine-Learning-Stock-Trading-Bot/blob/master/__main__.py) from the \_\_main__.py file. We are creating this **file** manually becasue this is the best way to show you what's in a **file**. I've not included the text here as that link has a `copy` button for you.
+We will uses nano, and paste the [following code](https://github.com/roguesupport-scott/Machine-Learning-Stock-Trading-Bot/blob/master/__main__.py) from the \_\_main__.py file. We are creating this **file** manually because this is the best way to show you what's in a **file**. I've not included the text here as that link has a `copy` button for you.
 
 > $ sudo nano \_\_main__.py
 
@@ -169,7 +169,7 @@ We will have to get our API keys from the sources here:
 ---
 #### Getting Your Keys
 ---
-This was probably one of the simplest steps, Just follow along above and make sure that the keys are wrapped in `'`quotes`'` after the `=` sign, or the program will not run.
+This was probably one of the simplest steps, just follow along above and make sure that the keys are wrapped in `'`quotes`'` after the `=` sign, or the program will not run.
 
 Open the config.py file using nano. Add the API keys you collected to the contents of the file manually.
 
@@ -194,4 +194,5 @@ Now go check your transaction history on your paper wallet account!
 #ScottDuncanIsAlwaysRight
 
 #ComputerScienceIsTheAnswerToEveryThing
+
 
