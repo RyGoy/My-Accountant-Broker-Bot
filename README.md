@@ -155,6 +155,9 @@ git it done again.
 
 ![image](https://user-images.githubusercontent.com/94795740/194684453-6dc4b007-75cd-4081-befb-ad198bdfc06e.png)
 
+---
+#### Getting Your Keys
+---
 
 We will have to get our API keys from the sources here:
 
@@ -168,9 +171,6 @@ We will have to get our API keys from the sources here:
 
 Its important to keep the keys private, here we have provided dummy example keys.
 
----
-#### Getting Your Keys
----
 This was probably one of the simplest steps, just follow along above and make sure that the keys are wrapped in `'`quotes`'` after the `=` sign, or the program will not run.
 
 Open the config.py file using nano. Add the API keys you collected to the contents of the file manually.
