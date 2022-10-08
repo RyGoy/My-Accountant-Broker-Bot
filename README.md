@@ -153,7 +153,7 @@ git it done again.
 
 >$ wget https://raw.githubusercontent.com/roguesupport-scott/Machine-Learning-Stock-Trading-Bot/master/config.py
 
-![Pasted image 20221006211017](https://user-images.githubusercontent.com/94795740/194466219-76ec9f66-f935-4dcc-a2d4-e743986350a4.png)
+![image](https://user-images.githubusercontent.com/94795740/194684453-6dc4b007-75cd-4081-befb-ad198bdfc06e.png)
 
 
 We will have to get our API keys from the sources here:
@@ -165,6 +165,8 @@ We will have to get our API keys from the sources here:
 3.[Alpaca](https://app.alpaca.markets/brokerage/new-account) (ALPACA_API_KEY).
 
 4.[Alpaca](https://app.alpaca.markets/brokerage/new-account) (ALPACA_SECRET_KEY).
+
+Its important to keep the keys private, here we have provided dummy example keys.
 
 ---
 #### Getting Your Keys
@@ -193,6 +195,6 @@ Now go check your transaction history on your paper wallet account!
 
 #ScottDuncanIsAlwaysRight
 
-#ComputerScienceIsTheAnswerToEveryThing
+#ComputerScienceIsTheAnswerToEverything
 
 
