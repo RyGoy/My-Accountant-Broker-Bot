@@ -123,7 +123,7 @@ We will uses nano, and paste the [following code](https://github.com/roguesuppor
 
 > $ sudo nano \_\_main__.py
 
-or use the following command to just git it done. This will automate all of the above.
+or use the following command to just git it done. This will automate the above.
 
 >$ wget https://raw.githubusercontent.com/roguesupport-scott/Machine-Learning-Stock-Trading-Bot/master/__main__.py
 
@@ -133,7 +133,7 @@ or use the following command to just git it done. This will automate all of the 
 
 Now we will close nano and enter `ctrl+x` and `Y` to save the **file**.
 
-We also need to create two more files, The [Forecast Library](https://github.com/roguesupport-scott/Machine-Learning-Stock-Trading-Bot/blob/master/forecast_library.py),
+We also need to create two more files, the [Forecast Library](https://github.com/roguesupport-scott/Machine-Learning-Stock-Trading-Bot/blob/master/forecast_library.py),
 
 >$ sudo nano forecast_library.py
 
@@ -189,7 +189,7 @@ Run it again and this is what we get.
 
 ![image](https://user-images.githubusercontent.com/94795740/194682215-d8a3f2b7-8881-4b1a-9a40-35596853690b.png)
 
-Now go check your transaction history on your paper wallet account!
+Now go check your transaction history on your paper trading account!
 
 
 
